@@ -1,0 +1,539 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --black: #000;
+    --white: #ffffff;
+    --bg-color-header1: #000;
+    --bg-color-header2: #431426;
+    --font-color1: #fafafa;
+}
+
+.light-mode:root{
+    --black: #fceccf;
+    --white: #000;
+    --bg-color-header1: #fceccf;
+    --bg-color-header2: #c82a0b;
+    --font-color1: #ff3939;
+}
+
+html{
+    scrollbar-width: thin;
+    scrollbar-color:  #E5552E transparent;
+}
+
+
+header{
+    position: fixed;
+    z-index: 369;
+    width: 100%;
+   
+}
+
+.label{
+border-radius: 100%;
+cursor: pointer;
+color: #ff0000;
+margin-right: -50px;
+margin-top: 8.55px;
+
+}
+
+.check{
+    opacity: 0;
+position: absolute;
+}
+
+body {
+    background-color: var(--black);
+}
+
+header.rolagem nav{
+    height: 40px;
+
+}
+
+header.rolagem .color {
+    margin-top: 2.5%;
+    padding: 10px 30px;
+    height: 76px;
+    border-radius: 15px;
+    background-color: var(--bg-color-header2);
+}
+
+/* .up{
+    display: none;
+} */
+
+header nav { 
+    gap: 50px;
+    display: flex;
+    background-image: linear-gradient(to right, var(--bg-color-header1),  var(--bg-color-header2), var(--bg-color-header2), var(--bg-color-header2), var(--bg-color-header1)); /*de vdd que coisa linda */
+    background-size: cover;
+    height: 80px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    /* position: fixed; */
+    z-index: 25;
+    transition: .5s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 2%;
+
+} 
+
+
+#burguer, #logoCala{
+    display: none;
+}
+
+
+.hamburguerMenu {
+    display: none;
+}
+
+.color img {
+    /* width: 100%; */
+    height: 100%;
+}
+
+.color {
+    height: 76px;
+    width: 208px;
+    transition: .25s;
+}
+
+ul {
+    display: flex;
+    gap: 25px;
+    
+}
+
+
+li {
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    list-style: none;
+    font-size: 1.5vw;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+ul a::after {
+    content: " ";
+    width: 100%;
+    height: 3px;
+    background-color: #E5552E;
+
+}
+
+
+
+.slider {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+
+
+section.slider {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 500px;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content {
+    width: 400%;
+    height: 125%;
+    display: flex;
+}
+
+.slider-content input,
+.img-mobile {
+    display: none;
+}
+
+
+.slide-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.img-mobile {
+    display: none;
+}
+
+.slide-box img {
+    width: 65%;
+    height: 95%;
+}
+
+.nav-manual,
+.nav-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 29%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn,
+.nav-auto div {
+    border: .0625rem solid #FC6202;
+    padding: .625rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
+    margin-right: .625rem;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: #FC6202;
+}
+#radio1:checked~.nav-auto .auto-btn1,
+#radio2:checked~.nav-auto .auto-btn2,
+#radio3:checked~.nav-auto .auto-btn3 {
+    background-color: #FC6202;
+}
+
+#radio1:checked~.primeiro {
+    margin-left: 0%;
+}
+
+#radio2:checked~.primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked~.primeiro {
+    margin-left: -50%;
+}
+
+.labelMenu{
+    display: none;
+}
+
+
+/*RETANGULOS DO MEIO DO SITE*/
+
+.estatico_unidades {
+    display: flex;
+    margin: 9.6875rem 0 6.25rem;
+    width: 100%;
+}
+
+.estatico_unidades a {
+    text-decoration: none;
+}
+
+.division {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+
+.static--imgs {
+    height: 26.875rem;
+    width: 19.0625rem;
+    border-radius: .9375rem;
+    transition: all 0.4s;
+
+}
+
+h3 {
+    color: var(--font-color1);
+    margin-bottom: .9375rem;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Irish Grover", system-ui;
+    letter-spacing: .125rem;
+}
+
+.static--imgs:hover {
+    transform: scale(1.05);
+    transform-origin: center;
+
+
+}
+
+.img-fixed img {
+    position: static;
+}
+
+/*FOOTER*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+footer{
+    background-image: linear-gradient(to right, #ff3939, #ff442f, #ff4e25, #fe5818, #fc6202);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+
+}
+footer p{
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+}
+
+
+.social{
+    display: flex;
+    padding: 20px 10px;
+    width: 350px;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.p{
+ text-align: left;
+}
+
+.imgs-footer{
+    display: flex;
+}
+
+.img-colorida img{
+    position: relative;
+    width: 350px;
+    height: 100%;
+    
+}
+.img-colorida{
+    z-index: absolute 1;
+}
+
+.acess{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5vw;
+    padding: 20px 10px;
+}
+
+.copyright{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    width: 100%;
+}
+
+.up{
+    background-color: #212121;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .25s;
+}
+
+.up:hover{
+    background-color: #4e4e4e;
+}
+
+.containerUp {
+    position: fixed; /* Ensure this line is added */
+    bottom: 20px; /* Example position; adjust as needed */
+    right: 20px;
+    /* left: 20px; Example position; adjust as needed */
+    background-image: linear-gradient(to right, #ff3939, #ff442f, #ff4e25, #fe5818, #fc6202);
+    width: 45px;
+    border-radius: 50%;
+    height: 45px;
+    z-index: 50;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: float 4.5s ease-in-out infinite;
+}
+.containerUp a{
+    text-decoration: none;
+    color: rgb(255, 136, 0);
+}
+
+
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+}
+
+/*RESPONSIVIDADE MOBILE*/
+
+@media (max-width: 480px) {
+    .slider{
+        display: none;
+    }
+
+    #header{
+        display: none;
+    }
+i#burguer, #logoCala{
+    display: block;
+    color: #ec4b1f;
+    justify-content: space-between;
+}
+
+main{
+    margin: 40px 0px;
+}
+
+#itens{
+    display: none;
+    background-color: #431426;
+    width: 150px;
+    padding: 10px 5px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+#itens ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ec4b1f;
+}
+#itens a{
+
+    text-decoration: none;
+    color: #ec4b1f;
+    font-size: 20px;
+}
+
+.labelMenu{
+   display: block;
+}
+
+.menu-burguer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #431426;
+    padding: 10px;
+}
+
+.alinhameto{
+    width: -100px;
+     margin-top: -4%; 
+    /* margin-right: -66%; */ 
+    position: absolute;
+    right: 0;
+    z-index: 99;
+
+    
+}
+
+#vazio{
+    display: none;
+}
+
+
+
+
+
+.img-lagartixa {
+    display: none;
+}
+
+.static--imgs {
+    width: 230px;
+    height: 300px;
+}
+
+.division {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.division h3 {
+    font-size: 5vw;
+}
+
+.social {
+    justify-content: space-around;
+    margin-left: 0;
+    width: 150px;
+}
+
+#icone {
+    width: 20px;
+    height: 20px;
+}
+
+
+footer p{
+    font-size: 15px ;
+}
+
+
+.rodape {
+    width: 100%;
+    justify-content: center;
+    /* gap: 15px; */
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+
+.img-colorida {
+    display: none;
+}
+
+.estatico_unidades {
+    margin: inherit;
+
+
+    .color img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.containerUp{
+    display: flex;
+}
+
+/*RESPONSIVIDADE TV*/
+@media screen {
+    
+}
+
+
+}

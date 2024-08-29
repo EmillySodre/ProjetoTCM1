@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.opcoes {
+    display: flex;
+    font-size: 2.1875rem;
+    justify-content: space-around;
+    margin-top: 4%;
+    font-family: "Irish Grover", system-ui;
+}
+
+#prtcasa, #favs, #bbdAlc, #bbd{
+    color: #E5552E;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 100px;
+    font-family: "Irish Grover", system-ui;
+    scroll-behavior: smooth;
+}
+
+.section-cardapiow{
+    margin-bottom: 20px;
+}
+
+.opcoes a {
+    text-decoration: none;
+    color: #E5552E;
+
+}
+
+.opcoes a:hover {
+    color: #f79539;
+    transition: all 0.3s;
+}
+
+#textCardapio{
+    display: none;
+}
+
+.card-redondo {
+    border-radius: 100%;
+    width: 15.625rem;
+    height: 15.625rem;
+    position: relative;
+    margin-left: -11.3%;
+}
+
+
+#btnpratos,
+.text {
+    display: flex;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+#btnpratos {
+    text-decoration: none;
+}
+
+#bbd{
+    scroll-behavior: smooth;
+}
+
+#favs{
+    scroll-behavior: smooth;
+}
+
+
+.section-cardapio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card-produto {
+    display: flex;
+    justify-content: space-around;
+    gap: .625rem;
+    width: 65.625rem;
+    background-color: rgb(56, 56, 53);
+    border-radius: 1.5625rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+}
+
+.card-produtoDireito {
+    padding-left: 1.25rem;
+}
+
+.card-produto:hover {
+    transition: all 0.5s;
+    transform: scale(1.08);
+}
+
+.card-text {
+    font-size: 1.25rem;
+    color: white;
+    width: fit-content;
+    text-align: left; 
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+  
+   
+}
+.txt-cardapio{
+    margin-bottom: 20px;
+    /* text-align: center; */
+    color: #E5552E;
+    font-family: "Irish Grover", system-ui;
+   
+}
+
+
+
+.valores{
+    flex-direction: column;
+    color: rgb(170, 73, 28);
+    font-weight: bold;
+}
+
+.btnpratos {
+    background-color: #E5552E;
+    color: white;
+    border: none;
+    padding: .3125rem 0;
+    border-radius: .9375rem;
+    width: 7.5rem;
+}
+
+.text {
+    width: 725px;
+}
+
+.btnpratos:hover {
+    background-color: #FFAE62;
+}
+
+.card-produtoDireito {
+    display: flex;
+    justify-content: space-around;
+    gap: .625rem;
+    height: 15.625rem;
+    width: 65.625rem;
+    background-color: rgb(56, 56, 53);
+    border-radius: 1.5625rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+}
+
+.esconder {
+    display: none;
+}
+
+.section-cardapio {
+    margin: 5% 0;
+}
+
+.card-redondoDireito {
+    margin-right: -15%;
+}
+
+.textDireito {
+    width: 725px;
+    /* margin-left: 15%; */
+}
+
+@media (max-width: 480px) {
+    .opcoes{
+        display: none;
+    }
+
+    #prtcasa, #favs, #bbdAlc, #bbd {
+        font-size: 35px;
+    }
+
+    #eumeodeio {
+        font-size: 3.5vw;
+        text-align: center;
+        font-family: "Irish Grover", system-ui;
+        letter-spacing: 3px;
+        color: #ec5930;
+    }
+
+    #textCardapio{
+        color: #E5552E;
+        text-align: center;
+        font-size: 35px;
+        display: block;
+    }
+
+
+
+    .card-produto,
+    .card-produtoDireito {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 450px;
+        margin-top: 5%;
+    }
+
+
+
+    .card-redondo {
+        width: 210px;
+        height: 170px;
+        margin-left: 0%;
+        margin-top: 2%;
+    }
+
+    .card-text {
+        display: flex;
+        margin: 0 auto;
+        font-size: 18px;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .txt-cardapio{
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .escondido {
+        display: none;
+    }
+
+    .esconder {
+        display: block;
+    }
+
+
+
+}

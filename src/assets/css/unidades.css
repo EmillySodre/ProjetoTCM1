@@ -1,0 +1,135 @@
+
+#unidades {
+    font-size: 4.2vw;
+    text-align: center;
+    font-family: "Irish Grover", system-ui;
+    letter-spacing: 3px;
+    color: #ec4b1f;
+}
+
+.card-todos {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.unidades-card1,
+.unidades-card2,
+.unidades-card3,
+p {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 60%;
+
+
+}
+
+ .unidades-card1,
+.unidades-card2,
+.unidades-card3 {
+    width: 430px;
+    height: 400px;
+}
+
+.unidades-card1:hover,
+.unidades-card2:hover,
+.unidades-card3:hover {
+    background-color: rgb(75, 71, 71);
+    transition: all 0.4s;
+    transform: scale(0.99);
+    border-radius: 15px;
+}
+
+.botaoLermais {
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#btnlerMais {
+
+    transition: all 0.2s;
+    padding: 5px 25px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(74, 25, 44);
+    box-shadow: 0px 0px 5px 3px rgb(74, 25, 44);
+    color: antiquewhite;
+    margin-bottom: 3%;
+    transition: 1s;
+}
+
+#btnlerMais:hover {
+    background-color: rgb(124, 53, 80);
+    box-shadow: 0px 0px 5px 3px rgb(124, 53, 80);
+}
+
+#lerMais {
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+
+
+.imgFlex {
+    display: flex;
+    justify-content: center;
+}
+
+.img-endereco {
+    margin-top: 30px;
+    width: 300px;
+    height: 250px;
+    border-radius: 8px;
+
+}
+
+
+.card-endereco-holder a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    letter-spacing: 1.5008px;
+    text-decoration: none;
+    color: #ebd2be;
+    background-color: #E5552E;
+    transition: all 0.2s;
+    border-radius: 15px;
+    padding: 2px 15px;
+}
+
+.card-endereco-holder a:hover {
+    background-color: #ebd2be;
+    color: #E5552E;
+}
+
+
+
+.card-endereco {
+    display: flex;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .card-todos{
+        flex-direction: column;
+    }
+
+    #vazio{
+        display: none;
+    }
+    
+
+    #unidades{
+        font-size: 35px;
+    }
+}

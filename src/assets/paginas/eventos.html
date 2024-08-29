@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Calaverito</title>
+    <link rel="stylesheet" href="../css/eventos.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="shortcut icon" href=".././img/icons/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../js/script.js" defer></script>
+    <script src="../js/lightMode.js" defer></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <ul>
+                <a href="../../../index.html" class="linkHeader">
+                    <li id="home" class="nav-item">Home</li>
+                </a>
+                <a href="../paginas/sobre_nos.html" class="linkHeader">
+                    <li class="nav-item">Sobre</li>
+                </a>
+                <a href="../paginas/unidades.html" class="linkHeader">
+                    <li class="nav-item">Unidades</li>
+                </a>
+                <a href="../paginas/cardapio.html" class="linkHeader">
+                    <li class="nav-item">Cardápio</li>
+                </a>
+            </ul>
+            <div class="color"><a href="index.html"><img src="../img/logoCalaveritoHorizontal.png" alt="Logo"></a></div>
+            <ul>
+                <a href="../paginas/cadastro.html" class="linkHeader">
+                    <li class="nav-item">Cadastro</li>
+                </a>
+                <a href="../paginas/combo.html" class="linkHeader">
+                    <li class="nav-item">Combos</li>
+                </a>
+                <a href="../paginas/eventos.html" class="linkHeader">
+                    <li class="nav-item">Eventos</li>
+                </a>
+                <a href="https://www.ifood.com.br/" class="linkHeader">
+                    <li class="nav-item">Ifood</li>
+                </a>
+                <label for="light-mode" class="label"><span class="material-symbols-outlined">
+                    light_mode
+                    </span></label>
+                <input type="checkbox" class="check" id="light-mode" />
+            </ul>
+        </nav>
+
+    </header>
+    <!--MENU HAMBURGUER-->
+    <div class="menu-burguer" id="header2">
+        <div class="color" id="logoCala"><a href="../../../index.html"><img src="../img/calaveritoCranio.png"alt="Logo"></a></div>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+    </div>
+    <div class="alinhameto">
+        <div id="itens" style="display: none;">
+            <ul>
+                <li><a href="../../../index.html" class="linkHeader">Home</a></li>
+                <li><a href="../paginas/sobre_nos.html" class="linkHeader">Sobre</a></li>
+                <li><a href="../paginas/cadastro.html" class="linkHeader">Cadastro</a></li>
+                <li><a href="../paginas/combo.html" class="linkHeader">Combos</a></li>
+                <li><a href="../paginas/eventos.html" class="linkHeader">Eventos</a></li>
+                <label for="light-mode" class="labelMenu"><span class="material-symbols-outlined">
+                    light_mode
+                    </span>
+                </label>
+                <input type="checkbox" class="check" id="light-mode" />
+            </ul>
+        </div>
+    </div> 
+
+    <div id="vazio" style="height: 90px;"></div>
+    
+    <div class="T-eventos">
+        <h1>Eventos</h1>
+        <p class="p-eventos">uma experiência unica para comemorar com pessoas especiais</p>
+    </div>
+
+
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="../img/carrossel1.jpeg" alt="slide 1">
+                <img class="img-mobile" src="imgs/modelo2.jpeg" alt="slide 1">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="../img/carrossel2.jpg" alt="slide 2">
+                <img class="img-mobile" src="imgs/modelo2.jpeg" alt="slide 2">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="../img/chili-combo.jpg" alt="slide 3">
+                <img class="img-mobile" src="imgs/modelo3.jpeg" alt="slide 3">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </section>
+
+
+   <img src="../img/aniversario.jpg" class="img-evento primeiro-eventos" alt="">
+    <section class="niver">
+        <article>
+            <h3>Aniversário</h3>
+            <p>Oferecemos pacotes especiais para grupos, decoração temática e um atendimento excepcional para tornar seu dia ainda mais especial. Reserve sua festa de aniversário conosco e celebre com muito sabor e alegria!</p>
+            <a href="./cadastro.html">Tenho interesse</a>
+        </article>
+    </section>
+
+    <img src="../img/quebraLInha_eventos.png" class="img-quebra-linha" alt="">
+
+    <img src="../img/losmuertos.jpg" class="img-evento" alt="">
+    <section class="niver">
+        <article>
+            <h3>Día de los muertos</h3>
+            <p>É uma festa importante do México, e no El Calaverito, celebramos essa tradição com uma festa memorável. Entre os dias 02 e 05/11, transformamos nosso restaurante em um verdadeiro templo de cores, sabores e memórias.</p>
+            <a href="./cadastro.html">Tenho interesse</a>
+        </article>
+    </section>
+
+    <img src="../img/quebraLInha_eventos.png" class="img-quebra-linha" alt="">
+
+    <img src="../img/happy hour.jpg" class="img-evento" alt="">
+    <section class="niver">
+        <article>
+            <h3>Happy hour</h3>
+            <p>Junte-se a nós para um happy hour vibrante e descontraído no El Calaverito! Todos os dias, das 19h ás 23h, oferecemos promoções especiais em bebidas e petiscos para você relaxar após um longo dia de trabalho. </p>
+            <a href="./cadastro.html">Tenho interesse</a>
+        </article>
+    </section>
+
+    <img src="../img/quebraLInha_eventos.png" class="img-quebra-linha" alt="">
+
+    <div id="containerUp" class="containerUp">
+        <a id="arrow" href="#header2">
+            <div class="up">
+                <span class="material-symbols-outlined">
+                    keyboard_arrow_up
+                </span>
+            </div>
+        </a>
+    </div>
+    <footer class="rodape rdpIndex">
+        <div class="content">
+            <div class="social">
+                <a href="https://wa.me/5511965670934?text=Ol%C3%A1%21+Gostaria+de+fazer+uma+reserva+em+uma+de+suas+unidades%2C+poderia+me+passar+mais+informa%C3%A7%C3%B5es+a+respeito%3F"
+                    target="_blank"><img id="icone" src="../img/icons/whatsapp.png" alt="logo whatsapp"></a>
+                <a href="https://www.instagram.com/elcalaverito?igsh=M3lnMWg2cTZlZXd1" target="_blank"><img id="icone"
+                        src="../img/icons/instagram.png" alt="instagram logo"></a>
+                <a href="#" target="_blank"><img id="icone" src="../img/icons/facebook.png" alt="facebook logo"></a>
+            </div>
+            <div class="acess">
+                <p> Tel: (11) 96567-0934</p>
+                <p> E-mail: calaveritoel@gmail.com</p>
+            </div>
+            <div class="img-colorida">
+                <img src="../img/img_footer.webp" alt="">
+            </div>
+        </div>
+
+        <p class="copyright">Todos os direitos reservados © | 2024</p>
+    </footer>
+
+
+</body>
+</html>
